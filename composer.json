@@ -1,0 +1,36 @@
+{
+    "name": "lectero/laragate",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Jimmi Hansen",
+            "email": "jh@schedula.dk",
+            "role": "Developer"
+        },
+        {
+            "name": "Casper Hansen",
+            "email": "cbh@schedula.dk",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Lectero\\Laragate\\": "src/"
+        }
+    },
+    "require-dev": {
+        "orchestra/testbench": "^7.0",
+        "phpunit/phpunit": "^9.5"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Lectero\\Laragate\\LaragateServiceProvider"
+            ],
+            "aliases": {
+                "Laragate": "Lectero\\Laragate\\Facades\\Laragate"
+            }
+        }
+    }
+}
