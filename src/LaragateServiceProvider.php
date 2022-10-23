@@ -2,6 +2,7 @@
 namespace Lectero\Laragate;
 
 use Illuminate\Support\ServiceProvider;
+use Lectero\Laragate\Console\MakePermission;
 
 class LaragateServiceProvider extends ServiceProvider
 {
@@ -21,6 +22,9 @@ class LaragateServiceProvider extends ServiceProvider
                 __DIR__.'/../config/config.php' => config_path('laragate.php'),
             ], 'config');
 
+            $this->commands([
+                MakePermission::class,
+            ]);
         }
         $this->loadMigrationsFrom(__DIR__ . '/../database/migrations');
     }
