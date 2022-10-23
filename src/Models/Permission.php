@@ -2,7 +2,6 @@
 
 namespace Lectero\Laragate\Models;
 
-use ectero\Laragate\Models\Role;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
